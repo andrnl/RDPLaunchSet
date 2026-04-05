@@ -1,0 +1,84 @@
+===============================================================================
+БЫСТРЫЙ СПРАВОЧНИК - ОСНОВНЫЕ ПАРАМЕТРЫ RDP
+===============================================================================
+
+🔗 ПОДКЛЮЧЕНИЕ:
+  full address:s:192.168.1.100       Адрес сервера
+  username:s:admin                    Имя пользователя
+  domain:s:COMPANY                    Домен (опционально)
+
+📺 ЭКРАН:
+  desktopwidth:i:1920                 Ширина (640/800/1024/1280/1366/1920)
+  desktopheight:i:1080                Высота (480/600/768/1024/1080)
+  session bpp:i:32                    Цвета (8/16/24/32)
+  screen mode id:i:2                  Режим (1=окно, 2=полный экран)
+
+🔐 БЕЗОПАСНОСТЬ:
+  authentication level:i:2            Уровень аутентификации (0-2)
+  enablecredsspssupp:i:1             CredSSP (1=да, 0=нет)
+  encrypt:i:3                         Шифрование (1-4)
+
+📶 СЕТЬ:
+  connection type:i:6                 Тип (1=Modem ... 6=LAN ... 7=Auto)
+  compression:i:1                     Сжатие (1=да, 0=нет)
+  bandwidthauto:i:1                   Авто пропускная способность
+  networkautodetect:i:1               Авто определение сети
+
+🔊 АУДИО:
+  audiomode:i:1                       Звук (0=удалённый, 1=локальный, 2=нет)
+  audiocapturemode:i:0               Микрофон (1=да, 0=нет)
+
+🖨️  УСТРОЙСТВА:
+  redirectdrives:i:1                  Диски (1=да, 0=нет)
+  redirectprinters:i:1                Принтеры (1=да, 0=нет)
+  redirectcomports:i:0                COM порты (1=да, 0=нет)
+  redirectclipboard:i:1               Буфер обмена (1=да, 0=нет)
+
+⚡ ПРОИЗВОДИТЕЛЬНОСТЬ:
+  allow desktop composition:i:0       Aero (1=да, 0=нет)
+  displayconnectionbar:i:1            Панель подключения
+  autoreconnect enabled:i:1           Авто переподключение
+  autoreconnect max retries:i:20     Число попыток
+
+===============================================================================
+РЕКОМЕНДУЕМЫЕ ЗНАЧЕНИЯ:
+===============================================================================
+
+✨ ДЛЯ ОФИСА (LAN):
+  full address:s:192.168.1.10
+  desktopwidth:i:1920
+  desktopheight:i:1080
+  session bpp:i:32
+  encrypt:i:2
+  compression:i:1
+
+🌍 ДЛЯ ИНТЕРНЕТА:
+  full address:s:gateway.com
+  desktopwidth:i:1366
+  desktopheight:i:768
+  session bpp:i:16
+  encrypt:i:3
+  compression:i:1
+
+📱 ДЛЯ МОБИЛЬНОГО:
+  full address:s:server.local
+  desktopwidth:i:1024
+  desktopheight:i:768
+  session bpp:i:16
+  bandwidthauto:i:1
+  allow desktop composition:i:0
+
+===============================================================================
+ТИПЫ ПАРАМЕТРОВ:
+===============================================================================
+
+s = String (текст):
+  Примеры: s:192.168.1.100, s:admin, s:DOMAIN
+
+i = Integer (число):
+  Примеры: i:1920, i:1080, i:32
+
+Формат строки:
+  параметр:тип:значение
+
+===============================================================================
